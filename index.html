@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elige tus personajes</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <h1>Elige tus personajes favoritos</h1>
+
+  <div id="characterSelection">
+    <h2>Selecciona 3 personajes:</h2>
+    <label for="character1" class="character-label">
+      <input type="checkbox" id="character1" value="Chamba ">
+      <img src="/images/CHAMBA.jpg" alt="Personaje 1" width="80px" height="80px">
+      <span class="character-name">Chamba</span>
+    </label><br>
+    <label for="character2" class="character-label">
+      <input type="checkbox" id="character2" value="David">
+      <img src="/images/DAVIDDIAZ.jpg" alt="Personaje 2" width="80px" height="80px">
+      <span class="character-name">David</span>
+    </label><br>
+    <label for="character3" class="character-label">
+      <input type="checkbox" id="character3" value="Umana">
+      <img src="/images/UMANA.jpg" alt="Personaje 3" width="80px" height="80px">
+      <span class="character-name">Umana</span>
+    </label><br>
+
+    <button onclick="showSelectedCharacters()">Mostrar selección</button>
+  </div>
+
+  <div id="selectedCharacters">
+    <h2>Tus personajes seleccionados:</h2>
+    <ul id="characterList"></ul>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
